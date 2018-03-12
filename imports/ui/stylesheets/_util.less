@@ -1,0 +1,302 @@
+@zero : 0 !important;
+@auto : auto !important;
+@full-height: 100% !important;
+@full-width: 100% !important;
+@border-thin: 1px solid @border-color-base !important;
+
+/**padding **/
+.p-0 {
+    padding: @zero;
+}
+.pl-0 {
+    padding-left: @zero;
+}
+.pr-0 {
+    padding-right: @zero;
+}
+.pt-0 {
+    padding-top: @zero;
+}
+.pb-0 {
+    padding-bottom: @zero;
+}
+.px-0 {
+    .pl-0;
+    .pr-0;
+}
+.py-0 {
+    .pt-0;
+    .pb-0;
+}
+
+/** margin **/
+.m-0 {
+    margin: @zero;
+}
+.ml-0 {
+    margin-left: @zero;
+}
+.mr-0 {
+    margin-right: @zero;
+}
+.mt-0 {
+    margin-top: @zero;
+}
+.mb-0 {
+    margin-bottom: @zero;
+}
+.mx-0 {
+    .ml-0;
+    .mr-0;
+}
+.my-0 {
+    .mt-0;
+    .mb-0;
+}
+.mx-auto {
+    margin-left: @auto;
+    margin-right: @auto;
+}
+
+/*** border ***/
+.border-0 {
+    border-width: @zero;
+}
+.border-top {
+    border-top: @border-thin;
+}
+.border-right {
+    border-right: @border-thin;
+}
+.border-bottom {
+    border-bottom: @border-thin;
+}
+.border-left {
+    border-left: @border-thin;
+}
+.rounded-0 {
+    border-radius: @zero;
+}
+.border-input-0 input {
+    border-width: @zero;
+}
+.border-input-top input {
+    border-top: @border-thin;
+}
+.border-input-right input {
+    border-right: @border-thin;
+}
+.border-input-bottom input {
+    border-bottom: @border-thin;
+}
+.border-input-left input {
+    border-left: @border-thin;
+}
+.rounded-0 {
+    border-radius: @zero;
+}
+
+/** size **/
+.h-100 {
+    height: @full-height;
+}
+.h-75 {
+    height: (@full-height * 3) / 4;
+}
+.h-50 {
+    height: @full-height / 2;
+}
+.h-25 {
+    height: @full-height / 4;
+}
+.h-auto {
+    height: @auto;
+}
+
+.w-100 {
+    width: @full-width;
+}
+.w-75 {
+    width: (@full-width * 3) / 4;
+}
+.w-50 {
+    width: @full-width / 2;
+}
+.w-25 {
+    width: @full-width / 4;
+}
+.w-auto {
+    width: @auto;
+}
+
+/*** Button ***/
+.btn-nav {
+    .p-0;
+    .text-center;
+    width: @layout-header-height;
+    height: @layout-header-height;
+}
+
+/*** bg ***/
+.bg-main {
+    background-color: @body-background;
+}
+.bg-none {
+    background-color: transparent !important;
+}
+
+/*** txt ***/
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.bold {
+    font-weight: 700;
+}
+.ft-24 {
+    font-size: 24px;
+    line-break: 24px;
+}
+.ft-18 {
+    font-size: 18px;
+    line-break: 18px;
+}
+.small {
+    font-size: 0.7em;
+}
+
+/*** display ***/
+.d-block {
+    display: block !important;
+}
+.d-inline {
+    display: inline !important;
+}
+.d-inline-block {
+    display: inline-block !important;
+}
+.d-flex {
+    display: flex !important;
+}
+.flex-column {
+    flex-direction: column !important;
+}
+.flex-fill {
+    flex-grow: 1;
+}
+.flex-fill > * {
+    .w-100;
+}
+.top {
+    align-items: start !important;
+}
+.right {
+    justify-content: flex-end !important;
+}
+.bottom {
+    align-items: end !important;
+}
+.left {
+    justify-content: flex-start !important;
+}
+.middle {
+    align-items: center !important;
+}
+.center {
+    justify-content: center !important;
+}
+.between {
+    justify-content: space-between !important;
+}
+.around {
+    justify-content: space-around !important;
+}
+
+/* position */
+.position-fixed {
+    position: fixed !important;
+}
+.position-absolute {
+    position: absolute !important;
+}
+.position-relative {
+    position: relative !important;
+}
+.position-static {
+    position: static !important;
+}
+.fixed-left {
+    .position-fixed;
+    left: @zero;
+}
+.fixed-top {
+    .position-fixed;
+    top: @zero;
+}
+.fixed-right {
+    .position-fixed;
+    right: @zero;
+}
+.fixed-bottom {
+    .position-fixed;
+    bottom: @zero;
+}
+.fixed-top-left {
+    .fixed-top;
+    .fixed-left;
+}
+.fixed-top-right {
+    .fixed-top;
+    .fixed-right;
+}
+.fixed-bottom-left {
+    .fixed-bottom;
+    .fixed-left;
+}
+.fixed-bottom-right {
+    .fixed-bottom;
+    .fixed-right;
+}
+// style={{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0 }}
+
+// overflow
+.overflow-hidden {
+    overflow: hidden;
+}
+.overflow-scroll {
+    overflow: scroll;
+}
+.overflow-auto {
+    overflow: auto;
+}
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+.overflow-x-scroll {
+    overflow-x: scroll;
+}
+.overflow-x-auto {
+    overflow-x: auto;
+}
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+.overflow-y-scroll {
+    overflow-y: scroll;
+}
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+/** shadow **/
+.shadow-0,
+.shadow-0:hover,
+.shadow-0:focus,
+.shadow-0:active {
+    box-shadow: none !important;
+}

@@ -1,0 +1,78 @@
+@import '{}/node_modules/antd/dist/antd.less';
+@import '_var';
+@import '_util';
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico');
+@import '_plugins';
+@import 'page-wrapper';
+
+body {
+    background-color: @body-background;
+    color: @base-color;
+    font-family: @family;
+}
+
+.logo {
+    font-family: 'Pacifico', @family;
+    color: @primary-color;
+}
+
+.anticon {
+    .m-0;
+}
+
+.menuSide {
+    .h-100;
+}
+.link-icon {
+    .ft-24;
+}
+.link-text {
+    .small;
+    .d-block;
+}
+.ant-menu-item {
+    .m-0;
+    .p-0;
+}
+.ant-menu-vertical .ant-menu-item {
+    .w-100;
+}
+.ant-menu-vertical .ant-menu-item-selected {
+    .bg-none;
+}
+.nav-link {
+    .d-flex;
+    .w-100;
+    .h-100;
+    .middle;
+    .center;
+}
+.nav-link-column {
+    .nav-link;
+    .flex-column;
+}
+.nav-link.active, .nav-link-column.active {
+    background-color: @bg-color;
+    color: @primary-color;
+}
+.ant-menu-vertical .nav-link,.ant-menu-vertical  .nav-link-column {
+    border-right: 2px solid transparent; 
+}
+.ant-menu-vertical .nav-link.active,.ant-menu-vertical  .nav-link-column.active {
+    border-right: 2px solid @primary-color;
+}
+.ant-menu-horizontal .ant-menu-item {
+    .h-100;
+}
+.header .ant-input {
+    .border-0;
+}
+.header .ant-input:focus {
+    .shadow-0;
+}
+.ant-layout-footer, .ant-layout-content, .ant-layout {
+    .bg-none;
+}
+input {
+    font-family: @family;
+}
