@@ -45,7 +45,7 @@ export default class SideBar extends Component {
         )
 
         return (
-            <Sider className="h-100 fixed-top-left" width={64}>
+            <Sider className="shadow h-100 fixed-top-left" width={64}>
                 <PerfectScrollbar>{menu}</PerfectScrollbar>
             </Sider>
         )

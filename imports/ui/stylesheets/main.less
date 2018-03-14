@@ -51,18 +51,25 @@ body {
     .nav-link;
     .flex-column;
 }
-.nav-link.active, .nav-link-column.active {
+.nav-link.active,
+.nav-link-column.active {
     background-color: @bg-color;
     color: @primary-color;
 }
-.ant-menu-vertical .nav-link,.ant-menu-vertical  .nav-link-column {
-    border-right: 2px solid transparent; 
+.ant-menu-vertical .nav-link,
+.ant-menu-vertical .nav-link-column {
+    border-right: 2px solid transparent;
 }
-.ant-menu-vertical .nav-link.active,.ant-menu-vertical  .nav-link-column.active {
+.ant-menu-vertical .nav-link.active,
+.ant-menu-vertical .nav-link-column.active {
     border-right: 2px solid @primary-color;
 }
 .ant-menu-horizontal .ant-menu-item {
     .h-100;
+}
+
+.header {
+    width: calc(~'100% - 64px');
 }
 .header .ant-input {
     .border-0;
@@ -70,9 +77,56 @@ body {
 .header .ant-input:focus {
     .shadow-0;
 }
-.ant-layout-footer, .ant-layout-content, .ant-layout {
+.ant-layout-footer,
+.ant-layout {
     .bg-none;
 }
-input {
-    font-family: @family;
+.ant-layout-content {
+    padding: 88px @space @space @space;
+    background-color: @bg-color;
+}
+.box {
+    .bg-main;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.075);
+    padding: @space;
+    margin-bottom: @space;
+    .rounded;
+    .position-relative;
+    .overflow-hidden;
+}
+.sales {
+    background-image: linear-gradient(to right, #11CB59 0%, #55DB8F 100%);
+    box-shadow: 0px 10px 25px lighten(#55DB8F, 20%);
+}
+.orders {
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    box-shadow: 0px 10px 25px lighten(#ff9a44, 20%);
+}
+.customers {
+    background-image: linear-gradient(to right, #4481eb 0%, #04befe 100%);
+    box-shadow: 0px 10px 25px lighten(#04befe, 20%);
+}
+p:last-child {
+    margin-bottom: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+}
+.ghost {
+    .position-absolute;
+    bottom: -2.5rem;
+    right: -2.5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    font-size: 10rem;
+    opacity: .3;
+}
+.badge-dot .ant-badge-status-text {
+    .ml-0;
+}
+.ant-fullcalendar-date .ant-fullcalendar-value {
+    .circle;
+}
+.ant-fullcalendar-month .ant-fullcalendar-value {
+    .rounded;
 }

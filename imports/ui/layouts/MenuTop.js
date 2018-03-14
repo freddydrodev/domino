@@ -8,7 +8,11 @@ const { Search } = Input
 
 btnStyle = { marginRight: 24 }
 const menu = (
-    <Menu mode="horizontal" className="d-flex right middle border-0" style={{marginRight: 20}} >
+    <Menu
+        mode="horizontal"
+        className="d-flex right middle border-0"
+        style={{ marginRight: 20 }}
+    >
         <Item key="2" className="border-0">
             <Button
                 style={btnStyle}
@@ -36,7 +40,10 @@ const menu = (
             >
                 <Badge dot status="success" count={1}>
                     Diomande Dro Freddy Junior
-                    <Avatar style={{marginLeft: 5}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                    <Avatar
+                        style={{ marginLeft: 5 }}
+                        src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+                    />
                 </Badge>
             </Button>
         </Item>
@@ -46,7 +53,7 @@ const menu = (
 export default class MenuTop extends Component {
     render() {
         return (
-            <Header className="header p-0 d-flex between middle flex-fill">
+            <Header className="shadow-left header p-0 d-flex between middle flex-fill fixed-top-right">
                 <Input
                     placeholder="Search category, product, order, sales, customers..."
                     prefix={<Icon type="search" />}

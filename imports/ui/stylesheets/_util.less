@@ -53,6 +53,9 @@
     .mt-0;
     .mb-0;
 }
+.mr-1 {
+    margin-right: 5px !important;
+}
 .mx-auto {
     margin-left: @auto;
     margin-right: @auto;
@@ -95,7 +98,18 @@
 .rounded-0 {
     border-radius: @zero;
 }
-
+.rounded {
+    border-radius: 5px;
+}
+.circle {
+    border-radius: 50%;
+}
+.shadow {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+.shadow-left {
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.05);
+}
 /** size **/
 .h-100 {
     height: @full-height;
@@ -169,6 +183,9 @@
 .small {
     font-size: 0.7em;
 }
+.text-white {
+    color: white;
+}
 
 /*** display ***/
 .d-block {
@@ -220,6 +237,7 @@
 /* position */
 .position-fixed {
     position: fixed !important;
+    z-index: 100;
 }
 .position-absolute {
     position: absolute !important;
