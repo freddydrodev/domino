@@ -3,10 +3,19 @@
 @full-height: 100% !important;
 @full-width: 100% !important;
 @border-thin: 1px solid @border-color-base !important;
+@space1: (@spacer * 0.25) !important;
+@space2: (@spacer * 0.5) !important;
+@space3: @spacer !important;
+@space4: (@spacer * 2) !important;
+@space5: (@spacer * 4) !important;
 
 /**padding **/
+//zero
 .p-0 {
     padding: @zero;
+}
+.pb-0 {
+    padding-bottom: @zero;
 }
 .pl-0 {
     padding-left: @zero;
@@ -17,9 +26,6 @@
 .pt-0 {
     padding-top: @zero;
 }
-.pb-0 {
-    padding-bottom: @zero;
-}
 .px-0 {
     .pl-0;
     .pr-0;
@@ -28,10 +34,148 @@
     .pt-0;
     .pb-0;
 }
-
+//one
+.p-1 {
+    .pb-1;
+    .pl-1;
+    .pr-1;
+    .pt-1;
+}
+.pb-1 {
+    padding-bottom: @space1;
+}
+.pl-1 {
+    padding-left: @space1;
+}
+.pr-1 {
+    padding-right: @space1;
+}
+.pt-1 {
+    padding-top: @space1;
+}
+.px-1 {
+    .pl-1;
+    .pr-1;
+}
+.py-1 {
+    .pb-1;
+    .pt-1;
+}
+//two
+.p-2 {
+    .pb-2;
+    .pl-2;
+    .pr-2;
+    .pt-2;
+}
+.pb-2 {
+    padding-bottom: @space2;
+}
+.pl-2 {
+    padding-left: @space2;
+}
+.pr-2 {
+    padding-right: @space2;
+}
+.pt-2 {
+    padding-top: @space2;
+}
+.px-2 {
+    .pl-2;
+    .pr-2;
+}
+.py-2 {
+    .pb-2;
+    .pt-2;
+}
+//three
+.p-3 {
+    .pb-3;
+    .pl-3;
+    .pr-3;
+    .pt-3;
+}
+.pb-3 {
+    padding-bottom: @space3;
+}
+.pl-3 {
+    padding-left: @space3;
+}
+.pr-3 {
+    padding-right: @space3;
+}
+.pt-3 {
+    padding-top: @space3;
+}
+.px-3 {
+    .pl-3;
+    .pr-3;
+}
+.py-3 {
+    .pb-3;
+    .pt-3;
+}
+//four
+.p-4 {
+    .pb-4;
+    .pl-4;
+    .pr-4;
+    .pt-4;
+}
+.pb-4 {
+    padding-bottom: @space4;
+}
+.pl-4 {
+    padding-left: @space4;
+}
+.pr-4 {
+    padding-right: @space4;
+}
+.pt-4 {
+    padding-top: @space4;
+}
+.px-4 {
+    .pl-4;
+    .pr-4;
+}
+.py-4 {
+    .pb-4;
+    .pt-4;
+}
+//five
+.p-5 {
+    .pb-5;
+    .pl-5;
+    .pr-5;
+    .pt-5;
+}
+.pb-5 {
+    padding-bottom: @space5;
+}
+.pl-5 {
+    padding-left: @space5;
+}
+.pr-5 {
+    padding-right: @space5;
+}
+.pt-5 {
+    padding-top: @space5;
+}
+.px-5 {
+    .pl-5;
+    .pr-5;
+}
+.py-5 {
+    .pb-5;
+    .pt-5;
+}
 /** margin **/
+//zero
 .m-0 {
     margin: @zero;
+}
+.mb-0 {
+    margin-bottom: @zero;
 }
 .ml-0 {
     margin-left: @zero;
@@ -42,9 +186,6 @@
 .mt-0 {
     margin-top: @zero;
 }
-.mb-0 {
-    margin-bottom: @zero;
-}
 .mx-0 {
     .ml-0;
     .mr-0;
@@ -53,8 +194,140 @@
     .mt-0;
     .mb-0;
 }
+//one
+.m-1 {
+    .mb-1;
+    .ml-1;
+    .mr-1;
+    .mt-1;
+}
+.mb-1 {
+    margin-bottom: @space1;
+}
+.ml-1 {
+    margin-left: @space1;
+}
 .mr-1 {
-    margin-right: 5px !important;
+    margin-right: @space1;
+}
+.mt-1 {
+    margin-top: @space1;
+}
+.mx-1 {
+    .ml-1;
+    .mr-1;
+}
+.my-1 {
+    .mb-1;
+    .mt-1;
+}
+//two
+.m-2 {
+    .mb-2;
+    .ml-2;
+    .mr-2;
+    .mt-2;
+}
+.mb-2 {
+    margin-bottom: @space2;
+}
+.ml-2 {
+    margin-left: @space2;
+}
+.mr-2 {
+    margin-right: @space2;
+}
+.mt-2 {
+    margin-top: @space2;
+}
+.mx-2 {
+    .ml-2;
+    .mr-2;
+}
+.my-2 {
+    .mb-2;
+    .mt-2;
+}
+//three
+.m-3 {
+    .mb-3;
+    .ml-3;
+    .mr-3;
+    .mt-3;
+}
+.mb-3 {
+    margin-bottom: @space4;
+}
+.ml-3 {
+    margin-left: @space4;
+}
+.mr-3 {
+    margin-right: @space4;
+}
+.mt-3 {
+    margin-top: @space4;
+}
+.mx-3 {
+    .ml-3;
+    .mr-3;
+}
+.my-3 {
+    .mb-3;
+    .mt-3;
+}
+//four
+.m-4 {
+    .mb-4;
+    .ml-4;
+    .mr-4;
+    .mt-4;
+}
+.mb-4 {
+    margin-bottom: @space4;
+}
+.ml-4 {
+    margin-left: @space4;
+}
+.mr-4 {
+    margin-right: @space4;
+}
+.mt-4 {
+    margin-top: @space4;
+}
+.mx-4 {
+    .ml-4;
+    .mr-4;
+}
+.my-4 {
+    .mb-4;
+    .mt-4;
+}
+//five
+.m-5 {
+    .mb-5;
+    .ml-5;
+    .mr-5;
+    .mt-5;
+}
+.mb-5 {
+    margin-bottom: @space5;
+}
+.ml-5 {
+    margin-left: @space5;
+}
+.mr-5 {
+    margin-right: @space5;
+}
+.mt-5 {
+    margin-top: @space5;
+}
+.mx-5 {
+    .ml-5;
+    .mr-5;
+}
+.my-5 {
+    .mb-5;
+    .mt-5;
 }
 .mx-auto {
     margin-left: @auto;
@@ -115,13 +388,13 @@
     height: @full-height;
 }
 .h-75 {
-    height: (@full-height * 3) / 4;
+    height: (@full-height * 0.75);
 }
 .h-50 {
-    height: @full-height / 2;
+    height: @full-height * 0.5;
 }
 .h-25 {
-    height: @full-height / 4;
+    height: @full-height * 0.25;
 }
 .h-auto {
     height: @auto;
@@ -131,13 +404,13 @@
     width: @full-width;
 }
 .w-75 {
-    width: (@full-width * 3) / 4;
+    width: (@full-width * 0.75);
 }
 .w-50 {
-    width: @full-width / 2;
+    width: @full-width * 0.5;
 }
 .w-25 {
-    width: @full-width / 4;
+    width: @full-width * 25;
 }
 .w-auto {
     width: @auto;
