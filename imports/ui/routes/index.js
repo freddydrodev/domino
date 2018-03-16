@@ -1,22 +1,13 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Switch } from 'react-router-dom'
 
-import P from '../components/P'
-import Dashboard from '../pages/Dashboard'
-import Shops from '../pages/Shops'
-import Categories from '../pages/Categories'
-import Products from '../pages/Products'
-import Tags from '../pages/Tags'
-import Orders from '../pages/Orders'
-import Sales from '../pages/Sales'
-import Delivery from '../pages/Delivery'
-import Employees from '../pages/Employees'
-import Customers from '../pages/Customers'
-import Activities from '../pages/Activities'
+import FancyRoute from '../components/FancyRoute'
+import routers from './routers'
 
 export default (routes = () => (
     <Switch>
-        <Route path="/Dashboard" component={Dashboard} />
+        {routers.map((route, i) => <FancyRoute key={i} {...route} />)}
+        {/* <Route path="/Dashboard" component={Dashboard} />
         <Route path="/Shops" component={Shops} />
         <Route path="/Categories" component={Categories} />
         <Route path="/Products" component={Products} />
@@ -28,6 +19,6 @@ export default (routes = () => (
         <Route path="/Customers" component={Products} />
         <Route path="/Activities" component={Activities} />
         <Route path="/" exact component={P} />
-        <Route render={() => <h1>404 Page Not Found</h1>} />
+        <Route render={() => <h1>404 Page Not Found</h1>} /> */}
     </Switch>
 ))
