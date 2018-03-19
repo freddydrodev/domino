@@ -1,0 +1,9 @@
+{
+    "private": {
+        "GM_API_KEY": "AIzaSyDLsTLxcH2OR0E4daWgUdoHb1uVjNYdMg8"
+    },
+    "public" : {
+        "test" : "I am a test",
+        "GM_API_KEY": "AIzaSyDLsTLxcH2OR0E4daWgUdoHb1uVjNYdMg8"
+    }
+}

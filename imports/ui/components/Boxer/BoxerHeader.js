@@ -8,17 +8,13 @@ export default class BoxerHeader extends Component {
             ...this.props.style
         }
         const className = 'boxer-header ' + this.props.className
-        return (
-            <header className={className} style={styleHeader}>
-                {this.props.heading ? (
-                    <h3 className="mb-0">{this.props.heading}</h3>
-                ) : null}
-                {this.props.subHeading ? (
-                    <h5 className="mb-0" style={{ opacity: 0.5 }}>
+        return <header className={className} style={styleHeader}>
+                {this.props.heading ? <h3 className="mb-0">
+                        {this.props.heading}
+                    </h3> : null}
+                {this.props.subHeading ? <h5 className="mb-0 opac-5">
                         {this.props.subHeading}
-                    </h5>
-                ) : null}
+                    </h5> : null}
             </header>
-        )
     }
 }

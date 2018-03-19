@@ -15,6 +15,9 @@ const listData = [
     },
     {
         title: '#AF5C4'
+    },
+    {
+        title: '#AF5C5'
     }
 ]
 
