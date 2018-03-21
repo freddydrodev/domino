@@ -1,0 +1,77 @@
+*{
+    color: #242f3e;
+    color: #746855;
+    color: #d59563;
+    color: #263c3f;
+    color: #6b9a76;
+    color: #38414e;
+    color: #212a37;
+    color: #9ca5b3;
+    color: #1f2835;
+    color: #f3d19c;
+}
+/*
+          geometry, stylers: {color: }
+          labels.text.stroke, stylers: {color: #242f3e}
+          labels.text.fill, stylers: {color: #746855}
+          administrative.locality,
+            elementType: labels.text.fill,
+            stylers: {color: #d59563}
+          
+          poi,
+            elementType: labels.text.fill,
+            stylers: {color: #d59563}
+          
+          poi.park,
+            elementType: geometry,
+            stylers: {color: #263c3f}
+          
+          poi.park,
+            elementType: labels.text.fill,
+            stylers: {color: #6b9a76}
+          
+          road,
+            elementType: geometry,
+            stylers: {color: #38414e}
+          
+          road,
+            elementType: geometry.stroke,
+            stylers: {color: #212a37}
+          
+          road,
+            elementType: labels.text.fill,
+            stylers: {color: #9ca5b3}
+          
+          road.highway,
+            elementType: geometry,
+            stylers: {color: #746855}
+          
+          road.highway,
+            elementType: geometry.stroke,
+            stylers: {color: #1f2835}
+          
+          road.highway,
+            elementType: labels.text.fill,
+            stylers: {color: #f3d19c}
+          
+          transit,
+            elementType: geometry,
+            stylers: {color: #2f3948}
+          
+          transit.station,
+            elementType: labels.text.fill,
+            stylers: {color: #d59563}
+          
+          water,
+            elementType: geometry,
+            stylers: {color: #17263c}
+          
+          water,
+            elementType: labels.text.fill,
+            stylers: {color: #515c6d}
+          
+          water,
+            elementType: labels.text.stroke,
+            stylers: {color: #17263c}
+          }
+        ,

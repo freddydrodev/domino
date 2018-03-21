@@ -95,8 +95,8 @@ body {
     .overflow-hidden;
 }
 .sales {
-    background-image: linear-gradient(to right, #11CB59 0%, #55DB8F 100%);
-    box-shadow: 0px 5px 15px lighten(#55DB8F, 20%);
+    background-image: linear-gradient(to right, #11cb59 0%, #55db8f 100%);
+    box-shadow: 0px 5px 15px lighten(#55db8f, 20%);
 }
 .orders {
     background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
@@ -109,7 +109,12 @@ body {
 p:last-child {
     margin-bottom: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: inherit;
 }
 .ghost {
@@ -119,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 5rem;
     margin-bottom: 5rem;
     font-size: 10rem;
-    opacity: .3;
+    opacity: 0.3;
 }
 .badge-dot .ant-badge-status-text {
     .ml-0;
@@ -131,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     .rounded;
 }
 .ant-fullcalendar-header {
-    background-color: rgba(0, 0, 0, 0.025)
+    background-color: rgba(0, 0, 0, 0.025);
 }
 .ant-list-item:first-child {
     padding-top: 0;
@@ -139,6 +144,22 @@ h1, h2, h3, h4, h5, h6 {
 .ant-list-item:last-child {
     padding-bottom: 0;
 }
-.summary .recharts-line-dots circle.recharts-dot.recharts-line-dot:not(:last-child) {
+.summary
+    .recharts-line-dots
+    circle.recharts-dot.recharts-line-dot:not(:last-child) {
     .d-none;
+}
+.ant-timeline-item-last .ant-timeline-item-content {
+    min-height: auto;
+}
+.ant-timeline-item-last {
+    padding-bottom: 0;
+}
+.ant-timeline-item-head-orange {
+    border-color: #f59c28;
+    color: #f59c28;
+}
+.ant-timeline-item-head-real-blue {
+    border-color: #28a3f5;
+    color: #28a3f5;
 }
