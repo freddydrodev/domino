@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import { Route } from 'react-router-dom'
 import nprogress from 'nprogress'
+import PerfectScrollbar from 'perfect-scrollbar'
 import 'nprogress/nprogress.css'
 
 class FancyRoute extends Component {

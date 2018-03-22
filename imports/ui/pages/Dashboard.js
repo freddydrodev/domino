@@ -20,7 +20,8 @@ const { Content } = Layout
 
 export default class Dashboard extends Component {
     render() {
-        return <Content>
+        return (
+            <Content>
                 <h2>Dashboard</h2>
                 <Row gutter={24}>
                     <Col span={16}>
@@ -30,16 +31,29 @@ export default class Dashboard extends Component {
                         <RecentOrders />
                     </Col>
                     <Col span={8}>
-                        <Box heading="Delivery" subHeading="Select a date to see deliveries" padding={padding}>
+                        <Box
+                            heading="Delivery"
+                            subHeading="Select a date to see deliveries"
+                            padding={padding}
+                        >
                             <DeliveryCalendar />
                         </Box>
-                        <Box heading="Delivery List" subHeading="Delivery for this day" padding={padding} content={<DeliveryList />} />
+                        <Box
+                            heading="Delivery List"
+                            subHeading="Delivery for this day"
+                            padding={padding}
+                            content={<DeliveryList />}
+                        />
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <Box heading="Customer Location" subHeading="This is the map previous of the customers related to the actual shop" padding={padding}>
-                            <MapShops isMarkerShown googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places" mapElement={<div style={{ height: `100%` }} />} />
+                        <Box
+                            heading="Customer Location"
+                            subHeading="This is the map previous of the customers related to the actual shop"
+                            padding={padding}
+                        >
+                            {/* <MapShops isMarkerShown googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places" mapElement={<div style={{ height: `100%` }} />} /> */}
                         </Box>
                     </Col>
                 </Row>
@@ -48,14 +62,20 @@ export default class Dashboard extends Component {
                         <LastestProducts />
                     </Col>
                     <Col span={8}>
-                        <Box padding={padding} content={<p className="opac-3">
-                                    No current message
-                                </p>} heading="Lastest Message" subHeading="message coming from Facebook Messenger" />
+                        <Box
+                            padding={padding}
+                            content={
+                                <p className="opac-3">No current message</p>
+                            }
+                            heading="Lastest Message"
+                            subHeading="message coming from Facebook Messenger"
+                        />
                     </Col>
                     <Col span={8}>
                         <ActivitiesTimeLine />
                     </Col>
                 </Row>
             </Content>
+        )
     }
 }

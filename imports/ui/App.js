@@ -7,7 +7,7 @@ export default class App extends Component {
     render() {
         return (
             <PageWrapper>
-                <Routes />
+                    <Routes />
             </PageWrapper>
         )
     }
