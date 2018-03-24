@@ -4,16 +4,16 @@ import { Layout, Row, Col } from 'antd'
 import {
     boxTransparent as transparent,
     paddingRect as padding
-} from '../utils/'
+} from '../../utils/'
 
-import Boxer from '../components/Boxer/Boxer'
-import Summary from '../components/Dashboard/Summary'
-import MapShops from '../components/Dashboard/MapShops'
-import DeliveryList from '../components/Dashboard/DeliveryList'
-import RecentOrders from '../components/ComplexList/RecentOrders'
-import LastestProducts from '../components/Dashboard/LastestProducts'
-import DeliveryCalendar from '../components/Dashboard/DeliveryCalendar'
-import ActivitiesTimeLine from '../components/Dashboard/ActivitiesTimeLine'
+import Boxer from '../../components/Boxer/Boxer'
+import Summary from '../../components/Dashboard/Summary/Summary'
+import MapShops from '../../components/Dashboard/MapShops/MapShops'
+import DeliveryList from '../../components/Dashboard/DeliveryList/DeliveryList'
+import RecentOrders from '../../components/ComplexList/RecentOrders/RecentOrders'
+import LastestProducts from '../../components/Dashboard/LastestProducts/LastestProducts'
+import DeliveryCalendar from '../../components/Dashboard/DeliveryCalendar/DeliveryCalendar'
+import ActivitiesTimeLine from '../../components/Dashboard/ActivitiesTimeLine/ActivitiesTimeLine'
 
 const { Box } = Boxer
 const { Content } = Layout

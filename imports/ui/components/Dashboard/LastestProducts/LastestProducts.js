@@ -3,8 +3,8 @@ import { Card, Icon, Avatar, Carousel } from 'antd'
 const { Meta } = Card
 import moment from 'moment'
 
-import Boxer from '../Boxer/Boxer'
-import { paddingRect as padding } from '../../utils/'
+import Boxer from '../../Boxer/Boxer'
+import { paddingRect as padding } from '../../../utils/'
 
 const format = 'ddd, Do MMM YYYY'
 const { Box, Content, Header } = Boxer

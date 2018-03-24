@@ -34,7 +34,7 @@ export default class SideBar extends Component {
                 {this.state.menuList.map((el, i) => (
                     <Item key={i} style={linkStyle}>
                         <NavLink
-                            to={'/' + el.link.toLowerCase()}
+                            to={'/app/' + el.link.toLowerCase()}
                             className="nav-link-column"
                         >
                             <Icon type={el.icon} className="link-icon" />

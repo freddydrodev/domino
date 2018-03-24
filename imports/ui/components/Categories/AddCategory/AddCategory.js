@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Modal, Button, Input, Form } from 'antd'
 
-import AddCategoryForm from './AddCategoryForm'
+import AddCategoryForm from '../AddCategoryForm/AddCategoryForm'
 const FormItem = Form.Item
 export default class AddCategory extends Component {
     state = { visible: false }

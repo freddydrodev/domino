@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-
-import { paddingRect as padding } from '../../utils/'
-import Item from './ComplexListItem'
-import Boxer from '../Boxer/Boxer'
 import moment from 'moment'
+
+import { paddingRect as padding } from '../../../utils/'
+import Item from '../ComplexListItem/ComplexListItem'
+import Boxer from '../../Boxer/Boxer'
 
 const { Box } = Boxer
 

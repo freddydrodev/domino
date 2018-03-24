@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Table } from 'antd'
 import PerfectScrollbar from 'perfect-scrollbar'
 
-import Boxer from '../Boxer/Boxer'
+import Boxer from '../../Boxer/Boxer'
 
 const Box = Boxer
 const columns = [

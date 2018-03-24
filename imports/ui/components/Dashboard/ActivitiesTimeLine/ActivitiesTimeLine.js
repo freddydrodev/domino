@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Icon, Timeline } from 'antd'
 import moment from 'moment'
 
-import Boxer from '../Boxer/Boxer'
-import { paddingRect as padding } from '../../utils/'
+import Boxer from '../../Boxer/Boxer'
+import { paddingRect as padding } from '../../../utils/'
 
 const format = 'ddd, Do MMM YYYY'
 const { Box } = Boxer
