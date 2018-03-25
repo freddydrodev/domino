@@ -1,9 +1,9 @@
 import React from 'react'
-import { Switch, Button, Popover } from 'antd'
+import { Switch } from 'antd'
 
 import EditPopup from '../../EditPopup/EditPopup'
 
-export default (dynamicCell = props => {
+export default (CellSwitch = props => {
     const { data, selected, value, editable } = props
     let output = <div className="d-flex between">{value}</div>
     if (editable) {

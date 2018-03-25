@@ -33,12 +33,20 @@ export default class SideBar extends Component {
             >
                 {this.state.menuList.map((el, i) => (
                     <Item key={i} style={linkStyle}>
-                        <NavLink
-                            to={'/app/' + el.link.toLowerCase()}
-                            className="nav-link-column"
-                        >
-                            <Icon type={el.icon} className="link-icon" />
-                        </NavLink>
+                            <Tooltip
+                                title={`${el.link} Page`}
+                                placement="right"
+                            >
+                                <NavLink
+                                    to={'/app/' + el.link.toLowerCase()}
+                                    className="nav-link-column"
+                                >
+                                    <Icon
+                                        type={el.icon}
+                                        className="link-icon"
+                                    />
+                                </NavLink>
+                            </Tooltip>
                     </Item>
                 ))}
             </Menu>

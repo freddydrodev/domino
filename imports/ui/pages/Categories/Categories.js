@@ -22,9 +22,7 @@ const columnsConfig = [
         dataIndex: 'id',
         width: 150,
         cellType: {
-            name: 'switch',
-            data: ['one', 'two'],
-            selected: 'two',
+            name: 'date',
             editable: true
         }
     },
@@ -33,12 +31,10 @@ const columnsConfig = [
         title: 'Switcher2',
         dataIndex: 'title',
         cellType: {
-            name: 'switch',
-            data: ['1', '2'],
-            selected: '1', //should come from record on dynamicCell component
+            name: 'text',
             editable: true
         }
-    },
+    }
 ]
 export default class Categories extends Component {
     render() {
@@ -50,7 +46,7 @@ export default class Categories extends Component {
                     dataSource={dataSource}
                     columnsConfig={columnsConfig}
                     options={{
-                        scroll:{y: 500}
+                        scroll: { y: 500 }
                     }}
                 />
             </Content>

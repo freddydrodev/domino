@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Button, Popover } from 'antd'
+import { Button, Popover } from 'antd'
 
 import './EditPopup.less';
 
