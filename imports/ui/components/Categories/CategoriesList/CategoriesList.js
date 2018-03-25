@@ -3,32 +3,20 @@ import { Table } from 'antd'
 import PerfectScrollbar from 'perfect-scrollbar'
 
 import Boxer from '../../Boxer/Boxer'
+import db from './db'
 
 const Box = Boxer
 const columns = [
     {
-        title: 'Full Name',
-        width: 100,
-        dataIndex: 'name',
-        key: 'name',
+        title: 'UserID',
+        width: 150,
+        dataIndex: 'userId',
+        key: 'userId',
         fixed: 'left'
     },
-    {
-        title: 'Age',
-        width: 100,
-        dataIndex: 'age',
-        key: 'age',
-        fixed: 'left',
-        style: { borderRight: '1px solid #eee' }
-    },
-    { title: 'Column 1', dataIndex: 'address', key: '1', width: 150 },
-    { title: 'Column 2', dataIndex: 'address', key: '2', width: 150 },
-    { title: 'Column 3', dataIndex: 'address', key: '3', width: 150 },
-    { title: 'Column 4', dataIndex: 'address', key: '4', width: 150 },
-    { title: 'Column 5', dataIndex: 'address', key: '5', width: 150 },
-    { title: 'Column 6', dataIndex: 'address', key: '6', width: 150 },
-    { title: 'Column 7', dataIndex: 'address', key: '7', width: 150 },
-    { title: 'Column 8', dataIndex: 'address', key: '8' },
+    { title: 'PostID', dataIndex: 'id', key: 'id', width: 150 },
+    { title: 'Title', dataIndex: 'title', key: 'title', width: 250 },
+    { title: 'Description', dataIndex: 'body', key: 'body' },
     {
         title: 'Action',
         key: 'operation',
@@ -38,36 +26,32 @@ const columns = [
     }
 ]
 
-const data = []
-for (let i = 0; i < 100; i++) {
-    data.push({
-        key: i,
-        name: `Edrward ${i}`,
-        age: 32,
-        address: `London Park no. ${i}`
-    })
-}
-
-class PerfectScrollTable extends Table {
-    constructor(props) {
-        super(props)
+export default class CategoriesList extends Component {
+    state = {
+        db: []
     }
 
-    componentDidMount() {}
-}
-export default class CategoriesList extends Component {
     render() {
+        const data = this.state.db.map(data => ({
+            key: data.id,
+            ...data
+        }))
+
         return (
             <Table
+                rowSelection={{}}
                 bordered={true}
                 size="small"
                 columns={columns}
                 dataSource={data}
-                scroll={{ x: 1500, y: 300 }}
+                pagination={{ pageSize: 25 }}
+                scroll={{ x: 1500, y: 450 }}
             />
         )
     }
     componentDidMount() {
+        this.setState({ db: db })
+
         this.ps = new PerfectScrollbar(
             document.querySelector('.ant-table-body')
         )
