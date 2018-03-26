@@ -9,6 +9,7 @@ import FancyRoute from '../../components/FancyRoute/FancyRoute'
 import routers from '../../routes/'
 
 export default class PageWrapper extends Component {
+    
     render() {
         return <Layout className="page-wrapper">
                 <SideBar />
